@@ -1,0 +1,16 @@
+version: '3.9'
+services:
+  db:
+    image: postgres:17
+    environment:
+      POSTGRES_DB: parkingsV2
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: yourverysecuredbpassword
+    volumes:
+      - postgres_data:/var/lib/postgresql/data  # This line ensures persistent storage
+    ports:
+      - "5432:5432"  # Expose PostgreSQL on port 5432
+
+volumes:
+  postgres_data:
+    driver: local  # This tells Docker to store the data locally
