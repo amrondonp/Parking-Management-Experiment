@@ -45,6 +45,8 @@ This project simulates what I would recommend if hired by a small parking lot ow
 - Requires .NET runtime but gets EF's productivity benefits  
 - Svelte has smaller ecosystem than React but much smaller footprint  
 
+## Demo Screenshot
+![Parking Management UI](./docs/demo.png)  
 
 ## License
 
